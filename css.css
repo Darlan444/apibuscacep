@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    align-items: center;
+    border-radius: 20px;
+    flex-wrap: nowrap;
+
+}
+
+.formulario {
+    width: 20rem;
+    height: 22rem;
+    background-color: aliceblue;
+    border-style: double;
+}
+
+h1 {
+    text-align: center;
+}
+
+label{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-weight: bold;
+    margin: 20px;
+    padding: 25px;
+}
+
+input{
+    max-width: 10rem;
+}
