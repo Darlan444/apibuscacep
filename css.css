@@ -32,10 +32,14 @@ label{
     font-family: 'Times New Roman', Times, serif;
     font-size: medium;
     font-weight: bold;
-    margin: 20px;
-    padding: 25px;
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+    padding: 1rem;
 }
 
 input{
     max-width: 10rem;
+    width: 250px;
+    float: right;
+    margin-right: 1.5rem;
 }
