@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Overpass:wght@100&display=swap&family=Silkscreen&display=swap"');
 body {
     margin: 0;
-    background-color: rgb(245, 239, 233);
+    background-color: rgb(0, 70, 128);
 }
 
 .container {
@@ -18,28 +19,45 @@ body {
 }
 
 .formulario {
-    width: 20rem;
-    height: 22rem;
-    background-color: aliceblue;
+    width: 40%;
+    height: auto;
+    background-color: #FFF;
     border-style: double;
+    border-color: #252525;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
 }
 
 h1 {
     text-align: center;
+    font-family: 'Overpass', sans-serif;
+    font-weight: bolder;
+    border-bottom: rgb(0, 70, 128) 2px solid;
 }
 
 label{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Overpass', sans-serif;
     font-size: medium;
-    font-weight: bold;
-    margin-left: 1.5rem;
-    margin-right: 1rem;
-    padding: 1rem;
+    font-weight: bolder;
+    margin: 1rem;
 }
 
 input{
-    max-width: 10rem;
-    width: 250px;
+    font-family: 'Overpass', sans-serif;
+    text-align: center;
+    max-width: 20rem;
+    width: 20rem;
     float: right;
-    margin-right: 1.5rem;
+    right: 2rem;
+    margin: -1rem;
+    background-color: #cecece;
+    color: #252525;
+}
+
+#cep{
+    background-color: #FFF;
+    border-radius: 12px;
 }

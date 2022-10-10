@@ -7,6 +7,8 @@
 
     <!-- Adicionando Javascript -->
     <script src="./script/api.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 
 </head>
 
@@ -18,19 +20,22 @@
         <form class="formulario" method="get" action=".">
             <h1>API Busca CEP</h1>
 
-            <label>Cep:
+            <label>Cep:</label>
                 <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
-                    onblur="pesquisacep(this.value);" /></label> <br /><br />
-            <label>Rua:
-                <input name="rua" type="text" id="rua" size="60" /></label> <br /><br />
-            <label>Bairro:
-                <input name="bairro" type="text" id="bairro" size="40" /></label> <br /><br />
-            <label>Cidade:
-                <input name="cidade" type="text" id="cidade" size="40" /></label> <br /><br />
-            <label>Estado:
-                <input name="uf" type="text" id="uf" size="2" /></label><br /><br />
-            <label>IBGE:
-                <input name="ibge" type="text" id="ibge" size="8" /></label><br /><br />
+                    onblur="pesquisacep(this.value);" /> <br /><br />
+                    <script type="text/javascript">
+                        $("#cep").mask("00000-000");
+                    </script>
+            <label>Rua:</label>
+                <input name="rua" type="text" id="rua" size="60" disabled /> <br /><br />
+            <label>Bairro:</label>
+                <input name="bairro" type="text" id="bairro" size="40" disabled /> <br /><br />
+            <label>Cidade:</label>
+                <input name="cidade" type="text" id="cidade" size="40" disabled /> <br /><br />
+            <label>Estado:</label>
+                <input name="uf" type="text" id="uf" size="2" disabled /><br /><br />
+            <label>IBGE:</label>
+                <input name="ibge" type="text" id="ibge" size="8" disabled /><br /><br />
 
         </form>
 
